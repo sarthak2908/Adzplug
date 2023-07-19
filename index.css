@@ -1,0 +1,95 @@
+body{
+    background-color: blue;
+}
+nav{
+    display: flex;
+        
+}
+ .logo {
+     height: 50px;
+     margin-left: 12%;
+     
+ }
+.na {
+    display: flex;
+    margin-left: 30%;
+}
+.na li {
+    margin : 2px 20px;
+    list-style: none;
+}
+.na li a{
+    text-decoration: none;
+    color: gray;
+}
+.con{
+    display: flex;
+    margin-top: 10%;
+    margin-right: 5%;
+    
+
+}
+.left{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.left div{
+    font-weight: bold;
+    font-size:300%;
+    color: aliceblue;
+    font-family: sans-serif;
+    animation: transitionIn 3s;
+    
+}
+.left h2{
+    color:grey
+    ;
+    margin-top: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    animation-delay: 3s;
+    animation: transitionIn 3s;
+}   
+.right img{
+    animation-delay: 9s;
+        animation: transitionout 15s;
+    margin-top: -5%;
+    margin-left: -5%;
+   
+}
+.but button{
+    padding: 20px 30px;
+    background-color: rgb(11, 196, 48);
+    border-radius: 8px;
+    border: none;
+    margin-right: 20px;
+    margin-top: 30px;
+    animation-delay: 6s;
+    animation: transitionout 10s;
+
+    width:40%;
+}
+.back{
+    position:absolute;
+    right:0;
+    bottom:-30%;
+    z-index: -1;
+}
+@keyframes transitionIn {
+    from{   
+        margin-left: -30%;
+    }
+    to{ 
+        margin-left: 0%;
+    }
+}
+@keyframes transitionout{
+        from{
+            opacity:0;
+        }
+        to{
+            opacity:1;
+        }
+    }
+    
+}
